@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
 
+/* Hero screen*/
 * {
     margin: 0;
     padding: 0;
@@ -50,13 +51,54 @@
 }
 
 .navbar ul li a:hover {
-    background-color: #5d88d5;
+    background-color: #FFC700;
+    color: #5f01b1;
 }
 
-.navbar h1{
+.navbar h1 {
     color: #fff;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     margin-top: 10px;
 }
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.content a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #5f01b1;
+    background-color: #FFC700;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 90px;
+
+}
+
+.content a:hover {
+    color: #fff;
+}
+
+/* */
