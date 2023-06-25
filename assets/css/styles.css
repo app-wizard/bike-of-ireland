@@ -104,6 +104,7 @@
 }
 
 .hero-content h2 {
+    padding: 0 24px;
     font-family: "Montserrat", sans-serif;
     font-size: 45px;
     color: #fff;
@@ -240,7 +241,7 @@
     flex-direction: column;
     justify-content: left;
     width: 464px;
-    height: 625px;
+    min-height: 625px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.7);
     margin-right: 40px;
