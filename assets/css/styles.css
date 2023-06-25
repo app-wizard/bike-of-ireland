@@ -301,6 +301,7 @@
 .form-button {
     align-self: center;
     font-size: 16px;
+    font-weight: 600;
     padding: 8px 40px;
     font-family: "Poppins", sans-serif;
     color: #5f01b1;
@@ -316,51 +317,76 @@
 /*our-command*/
 .team-content {
     width: 100%;
-    min-height: 50vh;
     background: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
 }
 
-.team-items {
+.team-wrap {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.team-video {
+    width: 480px;
+    height: 320px;
+    border-radius: 5px;
+    border: 1px solid #113548;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 12px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+}
+
+.team-items {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
+
 
 .team-item-card {
     flex-shrink: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 200px;
-    height: 280px;
-    border-radius: 52px;
+    width: 190px;
+    height: 146px;
+    border-radius: 5px;
     border: 1px solid #113548;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 20px;
+    margin: 10px;
 }
 
-.team-item1{
+.team-item1 {
     background-image: url(../img/face1.jpg);
 }
 
-.team-item2{
+.team-item2 {
     background-image: url(../img/face2.jpg);
 }
 
-.team-item3{
+.team-item3 {
     background-image: url(../img/face3.jpg);
 }
 
-.team-item4{
+.team-item4 {
     background-image: url(../img/face4.jpg);
 }
 
+/*Footer section*/
 .footer-content {
+    margin-top: 20px;
     width: 100%;
     min-height: 25vh;
     background-color: #113548;
