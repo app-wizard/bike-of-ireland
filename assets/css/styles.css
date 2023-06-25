@@ -400,8 +400,7 @@
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     align-items: center;
-     flex-wrap: wrap;
+      flex-wrap: wrap;
  }
 
  .footer-left {
@@ -451,7 +450,7 @@
  .footer-right {
 
      height: 20vh;
-     margin: 10px;
+     margin-right: 10px;
      display: flex;
      flex-direction: column;
      justify-content: left;
@@ -492,3 +491,14 @@
      text-decoration: none;
      text-align: right;
  }
+
+ .social-networks {
+    text-align: right;
+}
+
+.social-networks i {
+    font-size: 200%;
+    margin: 1%;
+    padding: 5%;
+    color: #ffffff;
+}
