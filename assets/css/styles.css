@@ -439,7 +439,7 @@
  .footer-logo {
      width: 180px;
      height: 180px;
-     margin: 10px;
+     margin: 0 10px;
      background-image: url(../img/logo-bottom.png);
      background-repeat: no-repeat;
      background-position: center;
@@ -502,3 +502,7 @@
     padding: 5%;
     color: #ffffff;
 }
+
+.social-networks i:hover {
+    color: #FFC700;
+ }
