@@ -11,31 +11,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
 }
 
 .add-flex-right {
     display: flex;
-    flex-direction: row;
-    align-content: flex-end;
- 
+    flex-direction: column;
+
 }
 
 .container {
     max-width: 1200px;
+    max-height: 100%;
     padding-left: 40px;
     padding-right: 40px;
+    margin: 0 auto;
 
 }
 
-/*header*/
+/*Header*/
 .header {
     background-color: #7298c9;
     min-height: 7vh;
-}
-
-.row {
-    width: 100%;
 }
 
 .logo {
@@ -54,6 +50,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    vertical-align: baseline;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -85,7 +82,7 @@
 
 /* Hero screen*/
 
-.hero-screen {
+#hero {
     width: 100%;
     min-height: 93vh;
     background-image: url("../img/hero7.jpg");
@@ -94,7 +91,7 @@
     background-size: cover;
 }
 
-.content {
+.hero-content {
     width: 100%;
     min-height: 100vh;
     position: absolute;
@@ -106,14 +103,14 @@
     flex-direction: column;
 }
 
-.content h2 {
+.hero-content h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 45px;
     color: #fff;
     font-weight: 500;
 }
 
-.content a {
+.hero-content a {
     text-decoration: none;
     margin-top: 20px;
     font-size: 20px;
@@ -128,27 +125,26 @@
 
 }
 
-.content a:hover {
+.hero-content a:hover {
     color: #fff;
 }
 
 
 /* Bike-screen */
-.bike-screen {
-    display: flex;
-    justify-content: center;
+#bikes {
+    min-height: 100vh;
 }
 
-.bike-screen-header {
+.section-header {
     color: #113548;
     text-align: center;
     font-size: 30px;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     line-height: 50px;
 }
 
-.bike-screen-services {
+.bikes-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -221,38 +217,54 @@
     font-family: "Roboto", sans-serif;
 }
 
-/* Book screen*/ 
-.book-screen {
+/* Book screen*/
+
+#rent {
     width: 100%;
-    display: flex;
-    min-height: 100vh;
     background-image: url("../img/hero8.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.book-screen-form {
+.rent-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rent-form {
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 464px;
     height: 625px;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.4);
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 40px;
+    margin: 0 40px;
 }
 
 /*our-command*/
-.our-team {
+.team-content {
     width: 100%;
     min-height: 50vh;
     background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
-.our-team-card {
+.team-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-item-card {
     background-color: rgb(209, 215, 215);
     width: 200px;
     height: 280px;
