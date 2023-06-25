@@ -7,31 +7,31 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+.add-flex-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
 
+.add-flex-right {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+ 
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
 /*header*/
 .header {
     background-color: #7298c9;
     min-height: 7vh;
-}
-
-/* Hero screen*/
-
-.hero-screen {
-    width: 100%;
-    min-height: 93vh;
-    background-image: url("../img/hero7.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .row {
@@ -49,7 +49,6 @@
     font-weight: 700;
     margin-top: 10px;
 }
-
 
 .navbar {
     width: 100%;
@@ -84,6 +83,16 @@
     color: #5f01b1;
 }
 
+/* Hero screen*/
+
+.hero-screen {
+    width: 100%;
+    min-height: 93vh;
+    background-image: url("../img/hero7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .content {
     width: 100%;
@@ -98,7 +107,7 @@
 }
 
 .content h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 45px;
     color: #fff;
     font-weight: 500;
@@ -123,10 +132,20 @@
     color: #fff;
 }
 
+
 /* Bike-screen */
 .bike-screen {
     display: flex;
     justify-content: center;
+}
+
+.bike-screen-header {
+    color: #113548;
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 50px;
 }
 
 .bike-screen-services {
@@ -135,7 +154,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     background: #FFF;
-    padding: 10px;
 }
 
 .item-card {
@@ -151,15 +169,6 @@
 }
 
 
-.item-card img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    margin: 0 auto;
-    object-fit: cover;
-
-}
-
 .item-card-img {
     width: 100%;
     height: 180px;
@@ -169,27 +178,27 @@
     background-size: contain;
 }
 
-#card1-img{
+#card1-img {
     background-image: url(../img/1bike.png);
 }
 
-#card2-img{
+#card2-img {
     background-image: url(../img/2bike.png);
 }
 
-#card3-img{
+#card3-img {
     background-image: url(../img/3bike.png);
 }
 
-#card4-img{
+#card4-img {
     background-image: url(../img/4bike.png);
 }
 
-#card5-img{
+#card5-img {
     background-image: url(../img/5bike.png);
 }
 
-#card6-img{
+#card6-img {
     background-image: url(../img/6bike.png);
 }
 
@@ -212,8 +221,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* Book screen*/ 
 .book-screen {
     width: 100%;
+    display: flex;
     min-height: 100vh;
     background-image: url("../img/hero8.jpg");
     background-repeat: no-repeat;
@@ -222,11 +233,14 @@
 }
 
 .book-screen-form {
+    display: flex;
+    flex-direction: column;
     width: 464px;
     height: 625px;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.4);
     margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: 40px;
 }
@@ -251,6 +265,6 @@
 .footer-content {
     width: 100%;
     min-height: 25vh;
-    background-color: #11023a;
+    background-color: #113548;
 
 }
