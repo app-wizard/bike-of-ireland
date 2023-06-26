@@ -30,8 +30,9 @@
 
  /*Header*/
  .header {
-     background-color: #7298c9;
+     background-color: #396fb5;
      min-height: 7vh;
+     padding-top: 5px;
  }
 
  .logo {
@@ -45,7 +46,7 @@
      color: #FFF;
      letter-spacing: 0.5px;
      font-weight: 400;
-     margin-top: 10px;
+
  }
 
  .navbar {
@@ -61,7 +62,6 @@
  .navbar ul {
      display: flex;
      align-items: center;
-     margin-top: 10px;
  }
 
  .navbar ul li {
@@ -478,13 +478,14 @@
 
  .copyright {
      font-family: "Poppins", sans-serif;
-     font-size: 12px;
+     font-size: 10px;
      color: #fff;
      text-decoration: none;
      text-align: right;
  }
 
  .follow-us {
+    margin-top: 10px;
      font-family: "Carter One", sans-serif;
      font-size: 16px;
      color: #fff;
