@@ -32,7 +32,7 @@
  .header {
      background-color: #396fb5;
      min-height: 7vh;
-     padding-top: 5px;
+     padding: 5px 0;
  }
 
  .logo {
