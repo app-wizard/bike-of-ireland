@@ -177,8 +177,19 @@
      border: 1px solid #113548;
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
      margin: 20px;
+     position: relative;
+     transition: 0.3s;
+     transition-property: transform;
  }
 
+ .item-card:hover .price{
+    transform: scale(1.2);
+    background-color: rgba(16, 86, 112, 1);
+}
+
+.item-card:hover {
+    transform: scale(1.03);
+}
 
  .item-card-img {
      width: 100%;
@@ -187,6 +198,30 @@
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
+ }
+
+ .price {
+     width: 55px;
+     height: 55px;
+     border-radius: 50%;
+     background-color: rgba(16, 86, 112, 0.9);
+     color: white;
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: 0.3s;
+     transition-property: transform, background-color;
+ }
+
+ .price span {
+     color: #FFF;
+     text-align: center;
+     font-size: 18px;
+     font-family: "Roboto", sans-serif;
+     font-weight: 600;
  }
 
  #card1-img {
@@ -646,8 +681,8 @@
          font-size: 20px;
      }
 
-     .hero-text{
-        font-size: 34px;
+     .hero-text {
+         font-size: 34px;
      }
 
      .logo {
