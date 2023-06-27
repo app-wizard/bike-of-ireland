@@ -33,6 +33,7 @@
      background-color: #396fb5;
      min-height: 7vh;
      padding: 5px 0;
+     position: relative;
  }
 
  .logo {
@@ -40,7 +41,6 @@
  }
 
  .logo h1 {
-     color: #fff;
      font-size: 30px;
      font-family: "Carter One", sans-serif;
      color: #FFF;
@@ -81,6 +81,16 @@
      background-color: #FFC700;
      color: #5f01b1;
  }
+
+ .header-icon {
+     display: none;
+ }
+
+ #check {
+     z-index: 3;
+     display: none;
+ }
+
 
  /* Hero screen*/
 
@@ -401,7 +411,7 @@
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-      flex-wrap: wrap;
+     flex-wrap: wrap;
  }
 
  .footer-left {
@@ -448,7 +458,7 @@
  }
 
  .footer-logo:hover {
-    transform: scale(1.2);
+     transform: scale(1.2);
  }
 
  .footer-right {
@@ -489,7 +499,7 @@
  }
 
  .follow-us {
-    margin-top: 10px;
+     margin-top: 10px;
      font-family: "Carter One", sans-serif;
      font-size: 16px;
      color: #fff;
@@ -498,19 +508,110 @@
  }
 
  .social-networks {
-    text-align: right;
-}
+     text-align: right;
+ }
 
-.social-networks i {
-    font-size: 200%;
-    margin: 1%;
-    padding: 5%;
-    color: #ffffff;
-    transition: 0.3s;
-    transition-property: transform;
-}
+ .social-networks i {
+     font-size: 200%;
+     margin: 1%;
+     padding: 5%;
+     color: #ffffff;
+     transition: 0.3s;
+     transition-property: transform;
+ }
 
-.social-networks i:hover {
-    color: #FFC700;
-    transform: scale(1.5);
+ .social-networks i:hover {
+     color: #FFC700;
+     transform: scale(1.5);
+ }
+
+
+ @media (max-width: 920px) {
+
+     .menu-top {
+         display: none;
+     }
+
+     .header-icon {
+         display: block;
+         font-size: 25px;
+         cursor: pointer;
+         color: #FFF;
+         transition: 0.3s;
+         transition-property: color;
+     }
+
+     .header-icon:hover {
+         color: #FFC700;
+     }
+
+     .header-icon .close-btn {
+         display: none;
+     }
+
+     #check:checked~.menu-top {
+         z-index: 2;
+         position: fixed;
+         background: rgba(57, 111, 181, 0.8);
+         top: 0;
+         bottom: 0;
+         right: 0;
+         left: 0;
+         display: flex;
+     }
+
+     #check:checked~.menu-top>ul {
+         flex-direction: column;
+         justify-content: center;
+         margin: 0 auto;
+         position: relative;
+     }
+
+     #check:checked~.menu-top>ul>li>a {
+         font-size: 28px;
+         line-height: 50px;
+         font-weight: 500;
+         margin-bottom: 20px;
+         letter-spacing: 2px;
+     }
+
+     #check:checked~.header-icon .menu-btn {
+         display: none;
+         position: absolute;
+         right: 10px;
+     }
+
+     #check:checked~.header-icon .close-btn {
+         z-index: 2;
+         display: block;
+         position: fixed;
+         top: 20px;
+         right: 50px;
+     }
+
+     .header-icon .menu-btn {
+         position: absolute;
+         bottom: -40px;
+         right: 10px;
+     }
+
+     .logo {
+         position: absolute;
+         bottom: -50px;
+     }
+
+     .header {
+         min-width: 4vh;
+     }
+
+     .team-items {
+         width: auto;
+     }
+
+     .rent-form {
+         padding: 12px;
+         margin: 0 auto;
+     }
+
+
  }
