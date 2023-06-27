@@ -1,6 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
 
  /* Global*/
+
  * {
      margin: 0;
      padding: 0;
@@ -29,9 +30,10 @@
  }
 
  /*Header*/
+
  .header {
      background-color: #396fb5;
-     min-height: 7vh;
+     min-height: 60px;
      padding: 5px 0;
      position: relative;
  }
@@ -115,7 +117,7 @@
      flex-direction: column;
  }
 
- .hero-content h2 {
+ .hero-text {
      padding: 0 24px;
      font-family: "Montserrat", sans-serif;
      font-size: 45px;
@@ -143,6 +145,7 @@
 
 
  /* Bike-screen */
+
  #bikes {
      min-height: 100vh;
  }
@@ -327,7 +330,8 @@
      color: #fff;
  }
 
- /*our-command*/
+ /*our-team*/
+
  .team-content {
      width: 100%;
      background: #ffffff;
@@ -344,6 +348,10 @@
      flex-wrap: wrap;
  }
 
+ .video480 {
+     display: none;
+ }
+
  .team-video {
      width: 480px;
      height: 320px;
@@ -353,7 +361,6 @@
      margin: 12px;
      flex-shrink: 0;
      overflow: hidden;
-
  }
 
  .team-items {
@@ -525,8 +532,12 @@
      transform: scale(1.5);
  }
 
-
+ /* Add adaptive <920px */
  @media (max-width: 920px) {
+     .container {
+         padding-left: 20px;
+         padding-right: 20px;
+     }
 
      .menu-top {
          display: none;
@@ -614,4 +625,33 @@
      }
 
 
+ }
+
+ @media (max-width: 560px) {
+
+     .container {
+         padding-left: 10px;
+         padding-right: 10px;
+     }
+
+     .footer-logo {
+         display: none;
+     }
+
+     .team-video {
+         display: none;
+     }
+
+     .logo>h1 {
+         font-size: 20px;
+     }
+
+     .hero-text{
+        font-size: 34px;
+     }
+
+     .logo {
+         position: absolute;
+         bottom: -40px;
+     }
  }
