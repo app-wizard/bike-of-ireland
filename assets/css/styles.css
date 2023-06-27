@@ -388,6 +388,7 @@
  }
 
  /*Footer section*/
+
  .footer {
      margin-top: 20px;
      width: 100%;
@@ -424,7 +425,6 @@
  }
 
  .footer-left ul li a {
-
      font-family: "Poppins", sans-serif;
      font-size: 16px;
      color: #fff;
@@ -432,7 +432,6 @@
  }
 
  .footer-left ul li a:hover {
-
      color: #FFC700;
  }
 
@@ -444,8 +443,13 @@
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
+     transition: 0.3s;
+     transition-property: transform;
  }
 
+ .footer-logo:hover {
+    transform: scale(1.2);
+ }
 
  .footer-right {
 
@@ -502,8 +506,11 @@
     margin: 1%;
     padding: 5%;
     color: #ffffff;
+    transition: 0.3s;
+    transition-property: transform;
 }
 
 .social-networks i:hover {
     color: #FFC700;
+    transform: scale(1.5);
  }
