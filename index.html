@@ -16,14 +16,14 @@
 
     <header class="header">
         <div class="container">
-            <div class="header-content add-flex-center">
+            <div class="header-content add-flex">
                 <nav class="navbar">
                     <a class="logo" href="#">
-                        <h1>Bikes of Ireland</h1>
+                        <h1 class="logo-text">Bikes of Ireland</h1>
                     </a>
                     <input type="checkbox" id="check">
                     <div class="menu-top">
-                        <ul>
+                        <ul class="menu-top-row">
                             <li><a href="#" aria-label="Home">Home</a></li>
                             <li><a href="#bikes" aria-label="Bikes">Bikes</a></li>
                             <li><a href="#rent" aria-label="Rent">Rent</a></li>
@@ -35,7 +35,6 @@
                         <i class="fas fa-times close-btn"></i>
                     </label>
                 </nav>
-
             </div>
         </div>
 
@@ -46,9 +45,9 @@
     <main>
         <section id="hero">
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-content  add-flex">
                     <h2 class="hero-text">Get Moving, Get Exploring: Rent a Bike and Go!</h2>
-                    <a href="#bikes" aria-label="Bikes">Unlock Your Adventure</a>
+                    <a class="hero-content-btn" href="#bikes" aria-label="Bikes">Unlock Your Adventure</a>
                 </div>
             </div>
         </section>
@@ -56,10 +55,10 @@
         <!-- Bike price section -->
 
         <section id="bikes">
-            <div class="container add-flex-center">
+            <div class="container add-flex">
                 <h2 class="section-header">Your Adventure Begins Here!</h2>
-                <div class="bikes-content">
 
+                <div class="bikes-content">
                     <div class="item-card">
                         <div id="card1-img" class="item-card-img"> </div>
                         <h3>Road Bike</h3>
@@ -120,32 +119,29 @@
                 <div class="rent-content">
                     <div class="rent-form">
                         <h3 class="form-title">Book Now</h3>
-                        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="rent-form-fields">
-
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                            class="rent-form-fields">
                             <label for="first-name" class="form-description">
-                                First Name
+                                First Name*
                             </label>
                             <input id="first-name" class="form-input" type="text" name="first-name"
                                 placeholder="Enter your name" required>
-
                             <label for="surname-name" class="form-description">
-                                Second Name
+                                Second Name*
                             </label>
                             <input id="surname-name" class="form-input" type="text" name="surname-name"
                                 placeholder="Enter your surname" required>
-
                             <label for="phone" class="form-description">
-                                Phone
+                                Phone*
                             </label>
                             <input id="phone" class="form-input" type="tel" name="Phone" placeholder="+353 X-XXX-XXXX"
                                 required>
-
                             <label for="comment" class="form-description">
                                 When should we contact you?
                             </label>
                             <textarea id="comment" class="input-textarea" name="comment"></textarea>
-
-                            <p class="form-description">By submitting this form, you agree to the Privacy Policy and
+                            <p class="form-description">*  Required field</p>
+                            <p class="form-description">** By submitting this form, you agree to the Privacy Policy and
                                 confirm that you are over 18 years old</p>
                             <div class="rent-form-bottom">
                                 <button class="form-button" type="submit">Submit</button>
@@ -161,9 +157,8 @@
 
         <section id="team">
             <div class="container">
+                <h2 class="section-header">Our Team</h2>
                 <div class="team-content">
-                    <h2 class="section-header">Our Team</h2>
-                    <div class="team-wrap">
                         <div class="team-item1 team-item-card">
                             <div class="team-item-card-text"><span>Boss</span></div>
                         </div>
@@ -177,7 +172,6 @@
                             <div class="team-item-card-text"><span>Sales Manager</span></div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -187,14 +181,11 @@
             <div class="promo-content">
                 <div class="promo-video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mx_XkbrcU8c?start=52"
-                        title="YouTube video player" 
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
             </div>
-
-
-
         </section>
     </main>
 
