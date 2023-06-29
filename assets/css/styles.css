@@ -19,6 +19,7 @@
      max-width: 1200px;
      padding: 0 40px;
      margin: 0 auto;
+     width: 100%;
  }
 
  li {
@@ -29,9 +30,12 @@
 
  .header {
      background-color: #396fb5;
+     height: 6vh;
      min-height: 60px;
-     padding: 5px 0;
      position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
  }
 
  .logo {
@@ -88,7 +92,7 @@
 
  #hero {
      width: 100%;
-     min-height: 93vh;
+     min-height: 94vh;
      background-image: url("../img/hero7.jpg");
      background-repeat: no-repeat;
      background-position: center;
@@ -133,8 +137,8 @@
  /* Bike-screen */
 
  #bikes {
-    padding-bottom: 40px;
-}
+     padding-bottom: 40px;
+ }
 
  .section-header {
      margin: 10px 0;
@@ -353,11 +357,11 @@
  }
 
  /* our-team */
- 
- #team{
-    padding-bottom: 40px;
+
+ #team {
+     padding-bottom: 40px;
  }
- 
+
  .team-content {
      min-height: 100%;
      width: 100%;
@@ -651,20 +655,16 @@
          z-index: 2;
          display: block;
          position: fixed;
-         top: 20px;
-         right: 20px;
+          right: 40px;
+          top: 25px;
      }
 
      .header-icon .menu-btn {
          position: absolute;
-         bottom: -40px;
-         right: 10px;
+             right: 20px;
+             top: 15px;
      }
 
-     .logo {
-         position: absolute;
-         bottom: -50px;
-     }
 
      .header {
          min-width: 4vh;
@@ -703,8 +703,13 @@
          font-size: 34px;
      }
 
-     .logo {
-         position: absolute;
-         bottom: -40px;
-     }
+    .header-icon .menu-btn {
+        position: absolute;
+            right: 25px;
+            top: 5px;
+    }
+    .navbar{
+        padding-left: 15px;
+    }
+  
  }
