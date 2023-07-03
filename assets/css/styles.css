@@ -655,14 +655,14 @@
          z-index: 2;
          display: block;
          position: fixed;
-          right: 40px;
-          top: 25px;
+         right: 40px;
+         top: 25px;
      }
 
      .header-icon .menu-btn {
          position: absolute;
-             right: 20px;
-             top: 15px;
+         right: 20px;
+         top: 15px;
      }
 
 
@@ -703,13 +703,14 @@
          font-size: 34px;
      }
 
-    .header-icon .menu-btn {
-        position: absolute;
-            right: 25px;
-            top: 5px;
-    }
-    .navbar{
-        padding-left: 15px;
-    }
-  
+     .header-icon .menu-btn {
+         position: absolute;
+         right: 25px;
+         top: 5px;
+     }
+
+     .navbar {
+         padding-left: 15px;
+     }
+
  }

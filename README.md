@@ -1,4 +1,4 @@
-# bike-of-ireland
+Bikes-of-ireland
  
 Bikes of Ireland is a bicycle rental website. It has 4 main sections for the user:
 
@@ -142,7 +142,11 @@ Additionally, I encountered an issue with the form functionality during the deve
 
 # Deployment 
 
-The website was initially developed on Github and subsequently deployed to GitHub Pages. 
+* The website was deployed to GitHub. The steps to deploy are as follows:
+    * In the GitHub repository, navigate to the Settings tab
+    * Scroll down to GitHub pages and click "Check it out here!"
+    * Under "Source" ensure you select "main"
+    * Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 Click [here](https://github.com/app-wizard/bike-of-ireland) to view my GitHub repository.
 
